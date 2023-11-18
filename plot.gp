@@ -1,8 +1,10 @@
-reset
+# plot_script.gnu
+set term wxt enhanced persist
+
+set xlabel 'Current (A)'
+set ylabel 'Voltage (V)'
+set title 'Charaketerystyka diody czerwonej LED'
+
 set datafile separator ','
-set yrange [0:1]
-set xrange [0:1]
-set title "Charakterystyka prądowo-napięciowa diody 1N4004"
-
-plot 'scope_5.csv' every ::2 using 2:3 smooth unique with lines
-
+set format xy '%g'
+plot 'Z3.csv' using 1:2 with points title 'Uv'
