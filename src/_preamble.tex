@@ -8,37 +8,54 @@
 Dodaj siebie
 }
 \begin{document}
-Miejsce na protokół
+[Miejsce na protokół]
 \maketitle
-\section{Zadanie Z2}
-\subsection{Opis Zadania}
+\section{Zadania do wykonania w domu}
+\subsection{Zadanie 2}
 \centering
-Zadanie zostało wykonane z życiem oscyloskopu z laboratorium, Do kanału 1 podłączono diodę badaną,
-kanał 2 podłączono do rezystora R2 o oporze 1 $\Omega$. 
+[Miejsce na wykresy dla poszczególnych diod] \\
+Korzystając z wzoru można policzyć prąd nasycenia diody\[
+  I = I_s \cdot e^{\frac{U}{nV_t}} \Rightarrow
+  I_s = \frac{I}{e^{\frac{U}{nV_t}}} 
+\]
+Obliczenia dla poszczególnych diod: \\
+Współczynnik nieidealności - n można wyznaczyć z następującego wzoru \[
+  n = \frac{\Delta{U}}{V_t \Delta{\ln(I)}}
+\]
+Obliczenia dla poszczególnych diod: \\
+Współczynnik $r_s=\frac{U`}{\Gamma}$ - rezystancji szeregowej, należy wyznaczyć dla jak największej wartości zmierzonego prądu diody. Odczytując z wykresu otrzymano następujący wynik:\\
+Obliczenia dla poszczególnych diod: \\
+Oznaczenia we wzorach:
 \raggedright
-\subsection{Wyniki}
-\subsubsection{Dioda 1N4004}
+\\ U - napięcie na diodzie\\ n - współczynnik nieidealności\\ $V_t$ - napięcie termiczne, założono wartość 25mV\\ 
+$I_s$ - prąd nasycenia diody\\ I - prąd płynący przez diodę\\ $r_s$ - rezystancja szeregowa\\ $\Gamma$ - największa wartość zmierzonego prądu diody \\
+U` - różnica pomiędzy wartością napiecia obserwowaną na diodze, a napięciem, które panowałoby na tej diodzie, gdyby $r_s$ było równe 0\\
+\break
+\raggedright
+\subsection{Zadanie 3}
 \centering
 \begin{figure}[h]
-\centering
-\includegraphics[scale=0.35]{./img/scope_0.png}
-  \caption{Dane otrzymane z oscyloskopu dla diody 1N4004}
+  \includegraphics[scale=0.5]{./img/Z3_U.png}
+  \caption{Wykres prądu w funkcji napięcia dla diody czerwonej LED. Przedstawiony w skali logarytmiczno-liniowej}
 \end{figure}
-Napięcie na kanale 2, jest równe wartości prądu płynącego przez diodę, ponieważ rezystor R2 ma opór 1 $\Omega$.
-W notcie katalogowej producent podaje wartość "Forward Voltage" dla prądu 1A, wynosi 1 V. Z wykresu widać, że napięcie 
-przewodzenia diody jest nieco mniejsze $\approx$ 0,8 V. Spowodowane jest to tym, że prąd płynący przez diodę jest mniejszy niż 1A. Można założyć, że napięcie przewodzenia zgadza się z tym podanym przez producenta.
+Korzystając z wcześniej przedstawionych wzorów i wartości odczytanych z wykresu lub tabeli, można wyznaczyć parametry diody: \\
+Rezystancja szeregowa, obliczona dla $\Gamma=60mA$, czyli największego zmierzonego prądu płynącego przez diodę.  $r_s=\frac{U'}{\Gamma} = \frac{10-9.94}{60 \cdot 10^{-3}}=1$
+współczynnik nieidealności diody: \[n = \frac{1.49-1.42}
+{26 \cdot 10^{-3} \cdot (\ln{(30 \cdot 10^{-6})}-\ln{(10 \cdot 10^{-6}}))} \approx 2.45\]
+Prąd nasycenia diody, obliczony dla punktu $(1.64,300\cdot10^{-6})$: \[I_s=\frac{300 \cdot 10^{-6}}{e^{\frac{1.64}{2.45 \cdot 26 \cdot 10^{-3}}}} \approx 1.97657... \cdot 10^{-15}\]
+
+\break
 \raggedright
-\subsubsection{Dioda BAVP17}
-\section{Zadanie Z3}
-\centering
-\subsection{Opis Zadania} 
-Zmierzone zostały charakterystyka prądowo napięciowe z użyciem oscyloskopu metodą punkt po punkcie. 
-Diodą badaną jest dioda czerwona LED. Wyniki pomiarów widoczne są w tabeli Z3 na protokole.
+\subsection{Zadanie 4}
 \begin{figure}[h]
 \centering
-  \includegraphics[scale=0.5]{./img/Z3_Uv.png}
-  \caption{Napięcie zmierzone przez multimetr}
+  \includegraphics[scale=0.5]{./img/Z4.png}
+  \caption{Wykres prądu w funkcji napięcia dla diody TODO:Nie pamiętam jakiej}
 \end{figure}
-Miejsce na Wykres Ua i U 
+
+
+
+
+
 
 

@@ -1,0 +1,33 @@
+
+
+*******************************************************************************
+Tue Nov 21 19:41:59 2023
+
+
+FIT:    data read from 'src/csvdata/Z4.csv' using 2:1
+        format = x:z
+        #datapoints = 6
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(V)
+	f(V) = Is*(exp(V/(n*Vt))-1)
+fitted parameters initialized with current variable values
+
+
+
+*******************************************************************************
+Tue Nov 21 19:43:23 2023
+
+
+FIT:    data read from 'src/csvdata/Z4.csv' using 2:1
+        format = x:z
+        #datapoints = 6
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = Is*(exp(x/(n*Vt))-1)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   Is            n            
+   0 1.8650000000e+02   0.00e+00  1.09e-22    1.970000e-15   2.450000e+00
+BREAK: Singular matrix in Invert_RtR
