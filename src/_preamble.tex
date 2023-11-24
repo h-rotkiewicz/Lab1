@@ -5,20 +5,52 @@
 \title{Sprawozdanie z Laboratorium 1}
 \author{
   Hubert Rotkiewicz 193421 \and 
-Dodaj siebie
+  Paweł Dolak 193582
 }
 \begin{document}
-[Miejsce na protokół]
 \maketitle
-\section{Zadania do wykonania w domu}
-\subsection{Zadanie 2}
+\begin{figure}[h]
+  \includegraphics[scale=0.6]{./img/Protokol_pp_cw1.jpg}
+\end{figure}
+\clearpage
+\raggedright
+\section{Zadanie 1}
+\subsection{a)}
 \centering
-[Miejsce na wykresy dla poszczególnych diod] \\
-Korzystając z wzoru można policzyć prąd nasycenia diody\[
+Dostaliśmy polecenie od prowadzącej laboratoria, aby nie wykonywać zadania Z1. Więc nie posiadamy potrzebnych danych do wykonania tego zadania.
+\raggedright
+\subsection{b)} 
+\centering
+\begin{figure}[h]
+  \includegraphics[scale=0.5]{./img/chart.png}
+  \caption{Charakterystyki prądowo-napięciowe badanych diod}
+\end{figure}
+Jak widać na załączonym wykresie, Dioda czerwona LED ma największe napięcie progowe wynoszące około $U \approx 1.65$. Diody BAVP17 i 1N4004 mają zbliżone do siebie charakterystyki, 
+jednakże dioda 1N4004 ma mniejsze napięcie progowe. 
+\raggedright
+\subsection{c)}
+\centering
+Różnice w charakterystykach prądowo-napięciowych diód mogą wynikać z wielu czynników. Takich jak procesy i warunki produkcji, materiały użyte do produkcji czy rozbieżności w parametrach diód. 
+Jak policzono w zadaniu 2, diody te mają różne parametry, takie jak napięcie nasycenia, czy współczynnik nieidealności. Co powoduje, że ich charakterystyki są różne.
+\raggedright
+\section{Zadanie 2}
+\centering
+
+\begin{figure}[h!]
+  \includegraphics[scale=0.3]{./img/1N4004.png}
+  \caption{Charakterystyka prądowo-napięciowa diody 1N4004}
+  \includegraphics[scale=0.4]{./img/BAVP17.png}
+  \caption{Charakterystyka prądowo-napięciowa diody BAVP17}
+  \includegraphics[scale=0.4]{./img/LED.png}
+  \caption{Charakterystyka prądowo-napięciowa diody czerwonej LED}
+\end{figure}
+\clearpage
+Korzystając ze wzoru można policzyć prąd nasycenia diody\[
   I = I_s \cdot e^{\frac{U}{nV_t}} \Rightarrow
   I_s = \frac{I}{e^{\frac{U}{nV_t}}} 
 \]
 Obliczenia dla poszczególnych diod: \\
+
 Współczynnik nieidealności - n można wyznaczyć z następującego wzoru \[
   n = \frac{\Delta{U}}{V_t \Delta{\ln(I)}}
 \]
@@ -32,7 +64,7 @@ $I_s$ - prąd nasycenia diody\\ I - prąd płynący przez diodę\\ $r_s$ - rezys
 U` - różnica pomiędzy wartością napiecia obserwowaną na diodze, a napięciem, które panowałoby na tej diodzie, gdyby $r_s$ było równe 0\\
 \break
 \raggedright
-\subsection{Zadanie 3}
+\section{Zadanie 3}
 \centering
 \begin{figure}[h]
   \includegraphics[scale=0.5]{./img/Z3_U.png}
@@ -45,7 +77,7 @@ współczynnik nieidealności diody: \[n = \frac{1.49-1.42}
 Prąd nasycenia diody, obliczony dla punktu $(1.64,300\cdot10^{-6})$: \[I_s=\frac{300 \cdot 10^{-6}}{e^{\frac{1.64}{2.45 \cdot 26 \cdot 10^{-3}}}} \approx 1.97657... \cdot 10^{-15}\]
 \break
 \raggedright
-\subsection{Zadanie 4}
+\section{Zadanie 4}
 \begin{figure}[h]
 \centering
   \includegraphics[scale=0.5]{./img/Z4.png}
